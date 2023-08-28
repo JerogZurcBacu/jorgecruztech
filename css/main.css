@@ -99,6 +99,10 @@ textarea {
 flex-direction: column;
 }
 
+.borde-redondeado {
+  border-radius: 10px;
+}
+
 /* Start Preview */
 
 /* Start Nav */
@@ -143,6 +147,12 @@ flex-direction: column;
   margin-left:30px;
 }
 
+#idioma {
+  width: 60px;
+  height: 25px;
+  background-color: purple;
+}
+
 /* End Nav */
 
 /* Start Contenido */
@@ -171,6 +181,21 @@ flex-direction: column;
 
 #encabezado-cuatro {
   margin-top: 60px;
+}
+
+.cont-padre-botones-home {
+  width: 80%;
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-botones-home {
+ width: 30%;
+}
+
+.flecha-boton {
+  margin-right: 20px;
 }
 
 /* End Contenido */
