@@ -112,6 +112,14 @@ flex-direction: column;
   z-index: 0;
 }
 
+#bg-blanco {
+background-color: rgba(255, 255, 255, 0.809);
+padding: 5vh 3vw;
+width: 94vw;
+height: 90vh;
+z-index: 9;
+}
+
 h1 {
   font-size: 83px;
 } 
@@ -120,6 +128,9 @@ h2 {
 }
 h3 {
   font-size: 43px;
+}
+h4 {
+  font-size: 23px;
 }
 
 .encabezados {
@@ -230,17 +241,30 @@ h3 {
 
 .cont-padre-botones-home {
   width: 80%;
-  background-color: purple;
   display: flex;
   justify-content: space-between;
 }
 
 .cont-botones-home {
- width: 30%;
+ width: 35%;
 }
 
 .flecha-boton {
   margin-right: 20px;
+}
+
+.flecha-img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+#encabezado-dos {
+  position: relative;
+}
+#aka {
+  position: absolute;
+  right: -8%;
+  top: -120%;
 }
 
 /* End Contenido */
