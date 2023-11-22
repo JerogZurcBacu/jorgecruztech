@@ -11,7 +11,6 @@ const miNombre = document.getElementById('mi-nombre');
 //Toggle lista idiomas
 idiomaActual.addEventListener('click', ()=>{
     listaIdiomas.classList.toggle('toggle');
-    console.log("click")
 });
 
 //Idiomas
@@ -21,6 +20,22 @@ const opcionesArray = Array.from(idiomas);
 opcionesArray.forEach((opcion)=>{
     opcion.addEventListener('click', ()=>{
         const idioma = opcion.getElementsByTagName('span')[0].textContent.toLowerCase();
-        console.log(idioma)
+        establecerIdioma(idioma);
     })
 })
+
+function establecerIdioma(idioma) {
+    idiomaActual.getElementsByTagName('img')[0].src = `img/${idioma}.png`;
+    switch (idioma) {
+        case 'english':
+            holaMundo.textContent = '<span id="negritas">¡HELLO</span> WORLD!';
+            miNombre.textContent = 'My names is Jorge Cruz';
+            break;
+        case 'portuguese':
+            holaMundo.textContent = 'Olá Mundo';
+            miNombre.textContent = 'Meu nome é Jorge Cruz';
+            break;
+        default:
+            break;
+    }
+}
