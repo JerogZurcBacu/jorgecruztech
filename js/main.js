@@ -28,7 +28,7 @@ function establecerIdioma(idioma) {
     idiomaActual.getElementsByTagName('img')[0].src = `img/${idioma}.png`;
     switch (idioma) {
         case 'english':
-            holaMundo.textContent = '<span id="negritas">¡HELLO</span> WORLD!';
+            holaMundo.innerHTML = '<span id="negritas">¡HELLO</span> WORLD!';
             miNombre.textContent = 'My names is Jorge Cruz';
             break;
         case 'portuguese':
