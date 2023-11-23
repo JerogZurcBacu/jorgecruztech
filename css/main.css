@@ -107,16 +107,16 @@ flex-direction: column;
 #myVideo {
   position: fixed;
   right: 0;
-  bottom: 0;
-  width: 100%;
+  top: 0;
+  height: 100vh;
   z-index: 0;
 }
 
 #bg-blanco {
 background-color: rgba(255, 255, 255, 0.809);
-padding: 5vh 3vw;
+padding: 3vh 3vw;
 width: 94vw;
-height: 90vh;
+height: 94vh;
 z-index: 9;
 }
 
@@ -155,6 +155,7 @@ a {
 #main {
   width: 100vw;
   height: 100vh;
+  overflow: none;
 }
 
 .max-width {
@@ -174,6 +175,10 @@ a {
   display: flex;
 }
 
+#cont-logo {
+  width: 50%;
+}
+
 #logo {
   width: 100%;
   max-width: 500px;
@@ -182,6 +187,7 @@ a {
 
 #menu {
   justify-content: flex-end;
+  width: 50%;
   }
 
 .cont-iconos-menu {
@@ -276,11 +282,12 @@ a {
 
 #cont-contenido {
   width: 100%;
-  height: 90%;
+  height: 96%;
+  background-color: red;
 }
 
 #contenido {
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -298,11 +305,12 @@ a {
 .cont-padre-botones-home {
   width: 80%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .cont-botones-home {
- width: 35%;
+ width: 95%;
 }
 
 .flecha-boton {
@@ -320,7 +328,7 @@ a {
 #aka {
   position: absolute;
   right: -8%;
-  top: -120%;
+  top: 0%;
 }
 
 /* End Contenido */
