@@ -3,6 +3,7 @@
 const idiomaActual = document.getElementById('idioma');
 const listaIdiomas = document.getElementById('idiomas');
 const idiomas = document.getElementsByClassName('opcion');
+const seleccionado = document.getElementsByClassName('seleccionado');
 
 // Info
 const holaMundo = document.getElementById('hola-mundo');
